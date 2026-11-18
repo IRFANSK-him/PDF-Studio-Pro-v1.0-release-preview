@@ -1,0 +1,23 @@
+PDF STUDIO PRO v1.0 — THIRD-PARTY LICENSE & SECURITY NOTICE
+===========================================================
+This ZIP is cumulative source for the owner's educational development project.
+It grants no proprietary rights to Python, PyMuPDF, PySide6/Qt or other dependencies.
+
+PyMuPDF: AGPL or commercial terms. You must comply with AGPL for distribution,
+or obtain an appropriate commercial license for closed-source commercial use.
+
+PySide6 / Qt: LGPL/GPL/commercial terms apply, including relevant Qt build,
+linking, notices and distribution obligations.
+
+Cryptography and HTTP/database dependencies have their own licenses.
+Review ALL applicable third-party terms before distribution.
+
+The license backend is included as source; no hosted infrastructure is created.
+Local server private keys, admin tokens and databases are NOT distributed in this ZIP.
+Keep private keys and tokens secret, backup DB and signing key securely, expose
+administration only through HTTPS, and protect endpoints against abuse.
+The software-only single-PC license binding is not secure against a determined
+attacker modifying a client or spoofing a PC identifier.
+
+No Windows executable, compiled installer, paid signing certificate, external
+license domain, or production deployment is included.

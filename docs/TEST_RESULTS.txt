@@ -1,0 +1,44 @@
+# ARCHIVED PART 2 RESULTS — For current Part 3 see PART3_TEST_RESULTS.txt
+
+PDF STUDIO PRO — PART 2 (v0.2) TEST RESULTS
+==========================================
+Date: 2026-11-18
+Test environment: Linux / Python 3.13.5 / PyMuPDF 1.26.7 / pytest 9.x
+
+Run from project root:
+    python -m compileall -q app.py pdfstudio tests
+    python -m pytest -q
+
+RESULTS:
+    22 passed, 1 skipped
+
+Passed:
+- All Part 1 PDF engine regression tests
+- Insert actual PDF text, image, watermark and metadata
+- Highlight annotations preserved when saved/reopened
+- Phrase redaction permanently removes page text
+- Rectangular redaction removes intersected page content
+- Intersected embedded image removed entirely by redaction policy
+- AES-256 creation and protected subsequent edits
+- Existing AES-256 encryption and permissions retained under owner auth
+- User-password access treated as read-only
+- Protected reordered/optimized PDF retains encryption
+- Re-protection with new AES-256 passwords
+- Lossless optimized save and text integrity
+- Unicode/simple glyph insertion with external font
+- Rotated-page text insertion and watermark
+- Modified page content survives page reordering
+- Invalid operations do not damage the working document
+
+Visual verification:
+- Created a sample PDF with inserted text, highlight, real redaction,
+  translucent watermark; rendered PNG and inspected the output.
+- The removed phrase did not appear in extracted text after saving.
+
+SKIPPED:
+- Qt GUI smoke module (PySide6 unavailable in this environment).
+- Attempted to install PySide6, but package index DNS/network access failed.
+- Desktop launch, interaction, window rendering, and Windows EXE have not
+  been verified. Run tests and manual acceptance checklist on Windows.
+
+No Windows EXE or installer was built in this environment.

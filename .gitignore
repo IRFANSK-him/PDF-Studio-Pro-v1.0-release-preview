@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+build/
+dist/
+*.spec
+.DS_Store
+
+# Do not publish secrets, local license databases or personal device state
+secrets/
+*.sqlite3
+*.sqlite3-*
+config/license_client.json
+activation.json
+.env
+*.pem

@@ -1,0 +1,4 @@
+{
+  "server_url": "https://licenses.your-domain.example",
+  "server_public_key_pem": "REPLACE_WITH_PUBLIC_ED25519_PEM_FROM_YOUR_PROVISIONED_SERVER"
+}
