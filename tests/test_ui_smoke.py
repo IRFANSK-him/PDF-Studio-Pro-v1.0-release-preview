@@ -52,5 +52,5 @@ def test_part2_dialogs_and_edit_ribbons():
     assert window.ribbon.tabText(7) == "Protect"
     for action in ("text", "highlight", "redact", "protect"):
         assert action in window._actions
-    assert window.windowTitle().endswith("Part 2")
+    assert window.windowTitle().endswith("v1.0")
     window.close()
